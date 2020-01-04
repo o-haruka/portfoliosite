@@ -88,8 +88,6 @@ a {
     text-decoration: none;
 }
 
-
-
 /*------------------------------------
   *parts
   *------------------------------------*/
@@ -122,8 +120,6 @@ section {
     padding: 10px;
     margin: 0 auto;
 }
-
-
 
 /*------------------------------------
   *nav
@@ -203,7 +199,6 @@ section {
 .mainvis {
     width: 100%;
     height: 100vh;
-
     padding-top: 80px;
     background-image: url(../image/mainvisual3.jpg);
     background-color: #D1E2F2;
@@ -228,15 +223,12 @@ section {
     position: relative;
 }
 
-
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 6rem;
     letter-spacing: 2px;
     color: white;
-
     margin: 0 0 20px;
-
 }
 
 .mainvis-subtitle {
@@ -246,12 +238,7 @@ h1 {
     margin: 0 0 25px;
     font-family: 'Raleway', sans-serif;
     color: #fff;
-
 }
-
-
-
-
 
 .mainvis-sns {
     text-align: center;
@@ -303,7 +290,6 @@ h1 {
 /*------------------------------------
   *about
   *------------------------------------*/
-
 .about-me {
     width: 100%;
     display: -webkit-box;
@@ -316,7 +302,6 @@ h1 {
 
 .about-desc-content {
     width: 100%;
-
 }
 
 .about-list {
@@ -337,7 +322,6 @@ h1 {
   *------------------------------------*/
 .skill-introduction {
     margin: 0 0 30px;
-
 }
 
 .skill-items {
@@ -421,7 +405,6 @@ date {
 
 .portfolio-item p {
     margin: 0;
-
 }
 
 /*------------------------------------
@@ -543,7 +526,6 @@ footer {
 
 .can-list li {
     list-style: disc;
-    ;
 }
 
 .to-home {
@@ -640,7 +622,6 @@ footer {
 
     #drawer-checkbox:checked ~ #drawer-icon span {
         background: rgba(51, 51, 51, 0);
-
     }
 
     #drawer-checkbox:checked ~ #drawer-icon span::before,
@@ -686,7 +667,6 @@ footer {
     #drawer-checkbox:checked ~ #drawer-content {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-
     }
 
     /*ドロワークローズ*/
@@ -822,7 +802,6 @@ footer {
     /*メインビジュアル*/
     .mainvis {
         height: 100vh;
-
     }
 
     .mainvis .inner {
