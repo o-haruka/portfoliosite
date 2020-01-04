@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <!--文字エンコード-->
+    <meta charset="UTF-8">
+
+    <!--Internet Explorer用設定-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!--タイトルタグ-->
+    <title>Haruka Omura</title>
+
+    <!--メタディスクリプション-->
+    <meta name="description" content="ページの内容を表す文章" />
+
+    <!--著者-->
+    <meta name="Author" content="" />
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--レスポンシブCSS-->
+
+    <!--JavaScript-->
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--googlefont-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/1186496289.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--コンテンツ-->
+    <div class="single-page">
+        <div class="inner">
+            <a class="to-home" href="index.html">HOMEへ戻る</a>
+            <h2 class="single-headline">概要</h2>
+            <p>自身のポートフォリオLPです。
+
+                一から全て一人で制作しました。
+
+                地元、青森県八戸市をテーマにしています。
+            </p>
+
+            <p>今後、このポートフォリオサイトもWordpress化する予定です。</p>
+
+
+            <h2 class="single-headline">詳細</h2>
+
+            <h3 class="headline">使用言語</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>jQuery</li>
+            </ul>
+
+            <h3 class="headline">その他</h3>
+            <p>お問い合わせフォームにはgoogle フォームを使っています。</p>
+
+            <h3 class="headline">メイン写真</h3>
+            <p>手持ちの一眼レフカメラで撮影しました。テーマとする、青森県八戸市をよく表していると思います。</p>
+
+            <h2 class="single-headline">キャプチャ</h2>
+
+            <div class="capture-wrapper">
+                <div class="capture-item">
+                    <img src="image/cupture/portfolio/portfolio-all.png" alt="">
+                </div>
+
+                <div class="capture-item">
+                    <img src="image/cupture/portfolio/portfolio-tab.png" alt="">
+                </div>
+
+                <div class="capture-item">
+                    <img src="image/cupture/portfolio/portfolio-sp.png" alt="">
+                </div>
+            </div>
+
+
+
+            <a class="to-home" href="index.html">HOMEへ戻る</a>
+        </div>
+        <!--/inner-->
+    </div>
+    <!--/コンテンツ-->
+
+    <footer>
+        <div class="footer-sns">
+            <a href="#"><i class="fab fa-twitter sns-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook sns-facebook"></i></a>
+        </div>
+        ©︎ Copyright | Haruka Omura 2019 All Rights Reserved
+
+    </footer>
+
+
+    <script>
+        //タブメニュー
+        $(function() {
+            /*クリックイベント*/
+            $('.tab_btn').on('click', function() {
+
+                $('.tab_item').removeClass("is-active-item");
+                $($(this).attr("href")).addClass("is-active-item");
+
+                //ボタン
+                $('.tab_btn').removeClass('is-active-btn');
+                $(this).addClass('is-active-btn');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

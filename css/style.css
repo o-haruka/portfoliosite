@@ -1,0 +1,845 @@
+@charset "utf-8";
+/*目次
+all
+
+parts
+
+nav
+-ロゴ
+-ナビ
+
+header
+
+about
+
+skills
+
+portfolio
+-
+-
+
+-
+
+*/
+
+
+/*------------------------------------
+  *all
+  *------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #5A676D;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*------------------------------------
+  *parts
+  *------------------------------------*/
+section {
+    padding: 90px 0 90px;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 60px;
+    letter-spacing: 1.5px;
+    color: rgba(1, 8, 17, 0.68);
+}
+
+.heading::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid rgba(1, 8, 17, 0.68);
+    width: 60px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+
+/*------------------------------------
+  *nav
+  *------------------------------------*/
+.nav {
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+
+    font-family: 'Lora', serif;
+    position: fixed;
+    z-index: 24;
+}
+
+.nav .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/*ロゴ*/
+.logo {
+    display: inline-block;
+}
+
+.logo-fish {
+    margin-right: 13px;
+}
+
+
+.logo a {
+    color: #F06292;
+    width: 300px;
+    font-size: 25px;
+}
+
+.logo a:hover {
+    opacity: .7;
+}
+
+/*ナビ*/
+.nav-unshown {
+    display: none;
+}
+
+.global-nav {
+    margin: 0;
+}
+
+.global-nav li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.global-nav a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    color: #5a676d;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav a:hover {
+    color: #F06292;
+}
+
+/*------------------------------------
+  *header
+  *------------------------------------*/
+.mainvis {
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 80px;
+    background-image: url(../image/mainvisual3.jpg);
+    background-color: #D1E2F2;
+    background-size: cover;
+    background-position: center;
+    /*中央揃え↓*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*左右中央揃え*/
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /*上下中央揃え*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainvis .inner {
+    position: relative;
+}
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 6rem;
+    letter-spacing: 2px;
+    color: white;
+
+    margin: 0 0 20px;
+
+}
+
+.mainvis-subtitle {
+    width: 100%;
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0 0 25px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+
+}
+
+
+
+
+
+.mainvis-sns {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #282830;
+}
+
+.mainvis-sns .fab:hover {
+    opacity: .5;
+}
+
+.mainvis-sns .fab {
+    font-size: 4rem;
+    margin: 0 15px;
+}
+
+.mainvis-sns .sns-twitter {
+    color: #1DA1F2;
+}
+
+.mainvis-sns .sns-facebook {
+    color: #4267b2;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #97ACF9;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+.fa-angle-double-down {
+    font-size: 4rem;
+    position: absolute;
+    bottom: 10px;
+}
+
+/*------------------------------------
+  *about
+  *------------------------------------*/
+
+.about-me {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.about-desc-content {
+    width: 100%;
+
+}
+
+.about-list {
+    padding-left: 0;
+}
+
+.about-list li {
+    padding-bottom: 10px;
+}
+
+.fa-check {
+    margin-right: 10px;
+    color: #FF80AB;
+}
+
+/*------------------------------------
+  *skills
+  *------------------------------------*/
+.skill-introduction {
+    margin: 0 0 30px;
+
+}
+
+.skill-items {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.skill-item {
+    width: 20%;
+    text-align: center;
+    padding: 15px;
+}
+
+.skill-item i {
+    font-size: 3rem;
+}
+
+.skill-text {
+    text-align: left;
+}
+
+/*------------------------------------
+  *portfolio
+  *------------------------------------*/
+.portfolio {
+    text-align: center;
+}
+
+.portfolio-introduction {
+    margin: 0 0 30px;
+    text-align: left;
+}
+
+.portfolio-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    margin: 0 20px 20px 0;
+    width: calc(33% - 40px/3);
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-item:hover {
+    opacity: 0.5;
+}
+
+.portfolio-item a {
+    display: block;
+    color: #5A676D;
+}
+
+.portfolio-img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-desc {
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+}
+
+date {
+    font-size: 1rem;
+}
+
+.portfolio-item p {
+    margin: 0;
+
+}
+
+/*------------------------------------
+  *contact
+  *------------------------------------*/
+.contact {
+    text-align: center;
+}
+
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    outline: none;
+    border: 3px solid #ececec;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 2rem;
+    color: #757575;
+    -webkit-appearance: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Raleway', sans-serif;
+}
+
+:-ms-input-placeholder {
+    font-family: 'Raleway', sans-serif;
+}
+
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*送信ボタン*/
+.contact-form input[type=submit] {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 40px auto 0;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #97ACF9;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.contact-form input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+/*------------------------------------
+  *footer
+  *------------------------------------*/
+footer {
+    position: relative;
+    width: 100%;
+
+    text-align: center;
+    padding: 30px;
+    color: #5a676d;
+}
+
+.footer-sns {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.footer-sns .sns-twitter {
+    color: #1da1f2;
+}
+
+.footer-sns .sns-facebook {
+    color: #4267B2;
+}
+
+.footer-sns i {
+    padding: 10px;
+}
+
+.footer-sns a:hover {
+    opacity: 0.5;
+}
+
+/*------------------------------------
+ *------------------------------------  
+ *個別ページ
+ *------------------------------------
+ *------------------------------------*/
+.single-page {
+    padding: 80px 0;
+    font-size: 1.4rem;
+}
+
+.single-headline {
+    margin-top: 40px;
+}
+
+.headline {
+    padding-left: 10px;
+    margin-top: 30px;
+    border-left: 5px solid #5A9FEF;
+}
+
+.can-list li {
+    list-style: disc;
+    ;
+}
+
+.to-home {
+    color: #F06292;
+}
+
+/*キャプチャ*/
+.capture-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.capture-item {
+    padding: 10px;
+}
+
+.capture-wrapper img {
+    display: block;
+    width: 100%;
+}
+
+/*------------------------------------
+ *------------------------------------  
+ *メディアクエリ
+ *------------------------------------
+ *------------------------------------*/
+
+/*タブレット*/
+@media screen and (max-width: 768px) {
+
+    /*ナビ*/
+    .global-nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .global-nav a {
+        color: rgba(1, 8, 17, 0.68);
+        text-align: left;
+    }
+
+    /*ドロワー*/
+    #drawer-icon {
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    #drawer-icon span {
+        background: #5a676d;
+        border-radius: 4px;
+        display: block;
+        width: 84%;
+        height: 10%;
+        margin: -8% 0 0 -42%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    #drawer-icon span::before,
+    #drawer-icon span::after {
+        -webkit-transform: rotate(0);
+        background: #5a676d;
+        border-radius: 4px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: -8% 0 0 -50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(0);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #drawer-icon span::before {
+        margin-top: -31%;
+    }
+
+    #drawer-icon span::after {
+        margin-top: 18%;
+    }
+
+    #drawer-checkbox:checked ~ #drawer-icon span {
+        background: rgba(51, 51, 51, 0);
+
+    }
+
+    #drawer-checkbox:checked ~ #drawer-icon span::before,
+    #drawer-checkbox:checked ~ #drawer-icon span::after {
+        content: "";
+        display: block;
+        height: 100%;
+        left: 50%;
+        margin: -8% 0 0 -42%;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+
+    #drawer-checkbox:checked ~ #drawer-icon span::before {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    #drawer-checkbox:checked ~ #drawer-icon span::after {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /*ドロワーコンテンツ*/
+    #drawer-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        width: 90%;
+        max-width: 250px;
+        height: 100%;
+        background: #fff;
+        -webkit-box-shadow: 6px 0 24px rgba(0, 0, 0, 0.16);
+        box-shadow: 6px 0 24px rgba(0, 0, 0, 0.16);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    #drawer-checkbox:checked ~ #drawer-content {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+    }
+
+    /*ドロワークローズ*/
+    #drawer-close {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    #drawer-checkbox:checked ~ #drawer-close {
+        display: block;
+        opacity: .7;
+    }
+
+    /*メインビジュアル*/
+    .mainvis {
+        height: 100vh;
+        background-position: top center;
+    }
+
+    .mainvis-sns {
+        margin: 20px 0 40px;
+    }
+
+    .mainvis-sns .fab {
+        font-size: 4rem;
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+    }
+
+    .mainvis-subtitle {
+        width: 100%;
+        display: inline-block;
+        font-size: 1.7rem;
+        margin: 0 0 10px;
+    }
+
+    /*snsアイコン*/
+    .mainvis-sns {
+        margin: 0 15px 15px;
+    }
+
+    .mainvis-sns .fab {
+        font-size: 2.5rem;
+        margin: 0 5px;
+    }
+
+    .btn {
+        max-width: 250px;
+        padding: 5px;
+        font-size: 1.7rem;
+    }
+
+    /*about*/
+    .about-me {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .my-img {
+        width: 100%;
+    }
+
+    .about-desc {
+        width: 100%;
+    }
+
+
+    /*skills*/
+    .skill-item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .skill-text {
+        /*#################
+        両端揃えにする、英数字の扱い
+        #######################*/
+    }
+
+    /*portfolio*/
+    .portfolio-item {
+        width: calc(50% - 20px/2);
+    }
+
+    .portfolio-item:nth-child(2n) {
+        margin-right: 0px;
+    }
+
+    .portfolio-item:nth-child(3n) {
+        margin-right: 20px;
+    }
+
+    /*contact*/
+    ::-webkit-input-placeholder {
+        font-size: 1.5rem;
+    }
+
+    :-ms-input-placeholder {
+        font-size: 1.5rem;
+    }
+
+    ::placeholder {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+/*#######################
+#########################
+##########スマホ##########
+#########################
+#########################*/
+
+@media screen and (max-width: 320px) {
+
+    /*メインビジュアル*/
+    .mainvis {
+        height: 100vh;
+
+    }
+
+    .mainvis .inner {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+
+    .mainvis-subtitle {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    .mainvis-sns {
+        margin-bottom: 16px;
+    }
+
+    /*about*/
+    .my-image {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .about-desc {
+        width: 100%;
+    }
+
+    .about-desc-content {
+        padding: 0 15px;
+    }
+
+    /*skills*/
+    .skill-item {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    /*portfolio*/
+    .portfolio-item {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .portfolio-item:nth-child(3n) {
+        margin-right: 0px;
+    }
+
+    /*コンタクトフォーム*/
+    .contact-form {
+        width: 100%;
+    }
+
+}
