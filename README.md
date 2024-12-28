@@ -1,7 +1,6 @@
 # portfoliosite
 This is my portfolio site. 
 
-自身のポートフォリオサイトです。
-以下のURLより直接アクセスできます。
+閉鎖
 
 https://harukaomura.work
